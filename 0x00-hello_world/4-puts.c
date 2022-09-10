@@ -2,6 +2,8 @@
 #include <stdio.h>
 /**
  *main - using puts to print string
+ *
+ * return : 0
  */
 int main (void)
 {
