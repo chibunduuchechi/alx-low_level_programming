@@ -1,7 +1,7 @@
 #!/bin/bash
 #include <stdio.h>
 /**
- *using puts to print string
+ *main - using puts to print string
  */
 int main (void)
 {
