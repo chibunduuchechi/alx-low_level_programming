@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
- * main - sizes
+ * main - entry point
  *
- * return: 0
+ * description: different computer sizes
+ *
+ * Return: 0
  */
 
 int main(void)

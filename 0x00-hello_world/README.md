@@ -1,1 +1,1 @@
-showing the sizes of computers
+different computer sizes
