@@ -1,1 +1,1 @@
-printing putchar
+functions nested loops
