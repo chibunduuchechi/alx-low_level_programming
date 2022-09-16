@@ -3,7 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - function printing a random number
+ * main - main entry
+ *
+ * Description: printing a random number
  */
 
 int main(void)
