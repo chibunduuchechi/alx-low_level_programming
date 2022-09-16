@@ -6,6 +6,8 @@
  * main - main entry
  *
  * Description: printing a random number
+ *
+ * Return: 0
  */
 
 int main(void)
