@@ -10,12 +10,18 @@
  */
 int main(void)
 {
-	char alphabets = 'a';
+	char lower = 'a';
+	char upper = 'A';
 
-	while (alphabets <= 'z')
+	while (lower <= 'z')
 	{
-		putchar(alphabets);
-		++alphabets;
+		putchar(lower);
+		++lower;
+	}
+	while (upper <= 'Z')
+	{
+		putchar(upper);
+		++upper;
 	}
 	putchar('\n');
 
