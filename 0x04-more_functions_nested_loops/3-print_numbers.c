@@ -13,7 +13,7 @@ void print_numbers(void)
 {
 	int c;
 
-	c = 48;
+	c = 0;
 
 	do {
 		_putchar(c + 48);
