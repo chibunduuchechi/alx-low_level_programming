@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - main entry point
  *
  * Description: function that checks for uppercase
  *
@@ -11,8 +11,6 @@
 
 int _isupper(int c)
 {
-	int upper;
-
 	if (upper >= 65 && upper <= 90)
 	{
 		return (1);
