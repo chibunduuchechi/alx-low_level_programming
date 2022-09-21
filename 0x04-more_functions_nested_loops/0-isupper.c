@@ -2,16 +2,18 @@
 #include <stdio.h>
 
 /**
- * main - main entry point
+ * _isupper - main entry point
  *
  * Description: function that checks for uppercase
+ *
+ * @c: describes the parameter
  *
  * Return: Always 0
  */
 
 int _isupper(int c)
 {
-	if (upper >= 65 && upper <= 90)
+	if (c >= 65 && c <= 90)
 	{
 		return (1);
 	}
