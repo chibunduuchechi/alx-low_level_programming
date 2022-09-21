@@ -18,6 +18,6 @@ void print_numbers(void)
 	do {
 		_putchar(num + 0 || num + 48);
 		num++;
-	} while (num >= 0 && num <= 9);
+	} while (num >= 48 && num <= 57);
 	_putchar('\n');
 }
