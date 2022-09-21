@@ -11,13 +11,13 @@
 
 void print_numbers(void)
 {
-	int num;
+	int c;
 
-	num = 0;
+	c = 0;
 
 	do {
-		_putchar(num + 0 || num + 48);
-		num++;
-	} while (num >= 48 && num <= 57);
+		_putchar(c + 0 || c + 48);
+		c++;
+	} while (c >= 0 && c <= 9);
 	_putchar('\n');
 }
