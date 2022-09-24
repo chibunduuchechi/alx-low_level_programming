@@ -17,9 +17,9 @@ void print_square(int size)
 		_putchar('\n');
 	else
 	{
-		for (breath = 0; breath > size; breath++)
+		for (breath = 0; breath < size; breath++)
 		{
-			for (length = 0; length > size; length++)
+			for (length = 0; length < size; length++)
 				_putchar('#');
 			_putchar('\n');
 		}
