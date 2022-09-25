@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * print_number - main entry point
@@ -17,10 +18,8 @@ void print_number(int n)
 		putchar('-');
 		number = -number;
 	}
-	number /= 10;
+	if (0 < (number / 10))
+		print_number(number / 10);
 
-	if (number != 0)
-	print_number(number);
-
-	_putchar((unsigned int) n % 10 + '0');
+	_putchar(48 + (number % 10));
 }
