@@ -25,7 +25,7 @@ int _strlen(char *s)
  * Description: concatenates two strings
  * @s1: array 1
  * @s2: array 2
- * Retun: 0
+ * Retun: Always a dynamic array
  */
 
 char *str_concat(char *s1, char *s2)
