@@ -6,7 +6,7 @@
  * free_grid - main entry point
  * Description: frees 2 dimension array
  * @height: height
- * @grid: 2 dimension grid
+ * @grid: two dimension grid
  * Return: void
  */
 
