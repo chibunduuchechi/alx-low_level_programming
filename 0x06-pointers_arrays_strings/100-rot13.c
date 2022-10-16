@@ -1,24 +1,30 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * print_number - main entry point
- * Description: prints an integer
- * @n: The integer to be printed
+ * rot13 - majn entry point
+ * Description: encodes a string using rot13
+ * @s: input string
+ * Return: the pointer to dest
  */
-void print_number(int n)
+
+char *rot13(char *s)
 {
-	unsigned int num = n;
+	int count = 0, i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	if (n < 0)
+	while (*(s + count) != '\0')
 	{
-		_putchar('-');
-		num = -num;
+		for (i = 0; i < 52; i++)
+		{
+			if (*(s + count) == alphabet[i])
+			{
+				*(s + count) = rot13[i];
+				break;
+			}
+		}
+		count++;
 	}
-
-	if ((num / 10) > 0)
-		print_number(num / 10);
-
-	_putchar((num % 10) + '0');
+	return (s);
 }
