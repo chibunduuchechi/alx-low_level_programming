@@ -1,0 +1,14 @@
+#ifndef SUM_H
+#define SUM_H
+
+/**
+ * File: 4-sum.h
+ * Description: Header file that defines a function-like
+ * macro SUM(x, y) that computes the sum of the numbers x and y
+ * @x: number to be sumed
+ * @y: second number ton be sumed up
+ */
+
+#define SUM(x, y) ((x) + (y))
+
+#endif /*SUM_H*/
