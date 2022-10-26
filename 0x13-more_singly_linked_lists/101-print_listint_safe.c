@@ -29,3 +29,35 @@ const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 	free(list);
 	return (newlist);
 }
+
+/**
+ * print_listint_safe - entry point
+ * Description: prints a listint_t linked list
+ * @head: pointer to the start of the list
+ * Return: the number of nodes in the list
+ */
+
+size_t print_listint_safe(const listint_t *head)
+{
+	size_t m, num = 0;
+	const listint_t **list = NULL;
+
+	while (head != NULL)
+	{
+		for (m = 0; m < num; m++)
+		{
+			if (head == list[m])
+			{
+				printf("-> [%p] %d\n", (void *)head, head->n);
+				free(list);
+				return (num);
+			}
+		}
+		num++;
+		list = _r(list, num, head);
+		printf("[%p] %d\n", (void *)head, head->n);
+		head = head->next;
+	}
+	free(list);
+	return (num);
+}
